@@ -1,6 +1,7 @@
 service: sls-base
 
 plugins:
+  - serverless-bundle
   - serverless-pseudo-parameters
 
 provider:
