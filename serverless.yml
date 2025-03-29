@@ -8,7 +8,7 @@ provider:
   runtime: nodejs20.x
   memorySize: 256
   stage: ${opt:stage, 'dev'}
-  region: ap-south-1
+  region: eu-west-1
   
 functions:
   hello:
