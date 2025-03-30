@@ -16,4 +16,4 @@ functions:
     events:
       - http:
           method: POST
-          path: /createAuction
+          path: /auction
