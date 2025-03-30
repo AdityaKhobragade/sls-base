@@ -1,7 +1,6 @@
 service: sls-base
 
 plugins:
-  - serverless-bundle
   - serverless-pseudo-parameters
 
 provider:
@@ -10,9 +9,7 @@ provider:
   memorySize: 256
   stage: ${opt:stage, 'dev'}
   region: ap-south-1
-  build:
-    esbuild: false  # Disable the built-in ESBuild
-
+  
 functions:
   createAuction:
     handler: src/handlers/createAuction.handler
